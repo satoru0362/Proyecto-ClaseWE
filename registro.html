@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- BOOTSTRAP 5.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- LIBRERIA DE FUENTES -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LIBRERIA DE ICONOS FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/812c8ee19a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FAVICON: ICONO PARA LA PESTANA DEL NAVEGADOR -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- HOJA DE ESTILO CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body
+    class="d-flex justify-content-center align-items-center min-vh-100 bg-light"
+  >
+    <!-- BOTOL DE WHATSAPP -->
+    <a href="https://wa.link/om7dwp" target="_blank">
+      <i class="fa-brands fa-whatsapp icono-whatsapp"></i>
+    </a>
+    <!-- FIN DE BOTON DE WHATSAPP -->
+
+    <!-- INICIO HEADER -->
+    <header id="header">
+      <nav class="menu">
+        <div class="logo">
+          <a href="#">
+            <img src="img/Logo.svg" alt="" class="img-fluid img-logo" />
+          </a>
+          <a href="#" class="btn-menu" id="btn-menu">
+            <i class="fa-solid fa-bars icono-menu"></i>
+          </a>
+        </div>
+        <div class="enlaces" id="enlaces">
+          <a href="index.html">INICIO</a>
+          <a href="cursos.html">CURSOS</a>
+          <a href="especializaciones.html">ESPECIALIZACIONES</a>
+          <a href="contacto.html">CONTACTOS</a>
+          <a href="registro.html">REGISTRO</a>
+          <a href="#">LOGIN</a>
+        </div>
+      </nav>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- INICIO DEL REGISTRO -->
+    <div class="card-registro shadow-lg">
+      <h2 class="titulo-principal text-center">
+        Regístrate aquí para más información
+      </h2>
+      <p class="subtitulo mb-4">Te contactaremos a la brevedad.</p>
+
+      <form action="#" method="post">
+        <div class="mb-3">
+          <select class="form-select custom-input" required>
+            <option value="" selected disabled>
+              ¿Qué producto te interesa?
+            </option>
+            <option value="1">Carreras</option>
+            <option value="2">Diplomados</option>
+            <option value="3">Cursos</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <select class="form-select custom-input" required>
+            <option value="" selected disabled>
+              ¿Qué carrera te gustaria estudiar?
+            </option>
+            <option value="1">Ingeniería Civil</option>
+            <option value="2">Ingeniería Industrial</option>
+            <option value="3">Ingeniería de Sistemas</option>
+            <option value="4">Ingeniería Mecánica</option>
+            <option value="5">Ingeniería Electrónica</option>
+            <option value="6">Ingeniería Ambiental</option>
+            <option value="7">Ingeniería Biomédica</option>
+            <option value="8">Ingeniería de Telecomunicaciones</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <select class="form-select custom-input" required>
+            <option value="" selected disabled>Elige el campus</option>
+            <option value="1">Lima Norte</option>
+            <option value="2">Lima Sur</option>
+            <option value="3">Lima Este</option>
+            <option value="4">Lima Oeste</option>
+            <option value="5">Lima Arequipa</option>
+            <option value="6">Lima Trujillo</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control custom-input"
+            placeholder="Apellidos y Nombres"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control custom-input"
+            placeholder="Correo electrónico"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <input
+            type="tel"
+            class="form-control custom-input"
+            placeholder="Celular"
+            required
+          />
+        </div>
+
+        <p class="etiqueta-radio mb-2">¿Cómo nos comunicamos contigo?</p>
+        <div class="row mb-4 comunicacion">
+          <div class="col-6">
+            <div class="form-check custom-radio">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="comunicacion"
+                id="radioWhatsApp"
+                required
+              />
+              <label class="form-check-label" for="radioWhatsApp">
+                WhatsApp
+              </label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check custom-radio">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="comunicacion"
+                id="radioLlamada"
+              />
+              <label class="form-check-label" for="radioLlamada">
+                LLamada
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-check mb-4 custom-checkbox">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="checkTerminos"
+            required
+          />
+          <label class="form-check-label" for="checkTerminos">
+            Acepto las
+            <a href="#" class="enlace-rojo">políticas de privacidad</a> y los
+            <a href="#" class="enlace-rojo">términos y condiciones.</a>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-enviar w-100">Enviar</button>
+      </form>
+    </div>
+    <!-- FIN DEL REGISTRO -->
+
+    <!-- IMPORTAR JS ANTES DEL CIERRE DEL BODY -->
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
+  </body>
+</html>
