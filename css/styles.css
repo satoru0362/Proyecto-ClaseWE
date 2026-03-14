@@ -124,6 +124,7 @@
     /* INICIO DE CONTACTOS */
     .form{
         background-color: #fff;
+        
         padding: 1em;
         border-radius: .5em;
         box-shadow: 1px 1px 6px var(--ColorSombras);
@@ -199,6 +200,7 @@
         border-radius: 15px;
         box-shadow: 0 10px 30px var(--colorBordes) !important;
         font-family: 'Poppins';
+        margin-top: 30px;
     }
 
     .titulo-principal {

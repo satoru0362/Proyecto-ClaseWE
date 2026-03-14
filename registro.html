@@ -35,9 +35,7 @@
     <script src="js/jquery.js"></script>
   </head>
 
-  <body
-    class="d-flex justify-content-center align-items-center min-vh-100 bg-light"
-  >
+  <body class="d-flex flex-column min-vh-100 bg-light">
     <!-- BOTOL DE WHATSAPP -->
     <a href="https://wa.link/om7dwp" target="_blank">
       <i class="fa-brands fa-whatsapp icono-whatsapp"></i>
@@ -68,128 +66,185 @@
     <!-- FIN HEADER -->
 
     <!-- INICIO DEL REGISTRO -->
-    <div class="card-registro shadow-lg">
-      <h2 class="titulo-principal text-center">
-        Regístrate aquí para más información
-      </h2>
-      <p class="subtitulo mb-4">Te contactaremos a la brevedad.</p>
+    <main
+      class="d-flex flex-grow-1 justify-content-center align-items-center w-100 my-5"
+    >
+      <div class="card-registro shadow-lg">
+        <h2 class="titulo-principal text-center">
+          Regístrate aquí para más información
+        </h2>
+        <p class="subtitulo mb-4">Te contactaremos a la brevedad.</p>
 
-      <form action="#" method="post">
-        <div class="mb-3">
-          <select class="form-select custom-input" required>
-            <option value="" selected disabled>
-              ¿Qué producto te interesa?
-            </option>
-            <option value="1">Carreras</option>
-            <option value="2">Diplomados</option>
-            <option value="3">Cursos</option>
-          </select>
-        </div>
+        <form action="#" method="post">
+          <div class="mb-3">
+            <select class="form-select custom-input" required>
+              <option value="" selected disabled>
+                ¿Qué producto te interesa?
+              </option>
+              <option value="1">Carreras</option>
+              <option value="2">Diplomados</option>
+              <option value="3">Cursos</option>
+            </select>
+          </div>
 
-        <div class="mb-3">
-          <select class="form-select custom-input" required>
-            <option value="" selected disabled>
-              ¿Qué carrera te gustaria estudiar?
-            </option>
-            <option value="1">Ingeniería Civil</option>
-            <option value="2">Ingeniería Industrial</option>
-            <option value="3">Ingeniería de Sistemas</option>
-            <option value="4">Ingeniería Mecánica</option>
-            <option value="5">Ingeniería Electrónica</option>
-            <option value="6">Ingeniería Ambiental</option>
-            <option value="7">Ingeniería Biomédica</option>
-            <option value="8">Ingeniería de Telecomunicaciones</option>
-          </select>
-        </div>
+          <div class="mb-3">
+            <select class="form-select custom-input" required>
+              <option value="" selected disabled>
+                ¿Qué carrera te gustaria estudiar?
+              </option>
+              <option value="1">Ingeniería Civil</option>
+              <option value="2">Ingeniería Industrial</option>
+              <option value="3">Ingeniería de Sistemas</option>
+              <option value="4">Ingeniería Mecánica</option>
+              <option value="5">Ingeniería Electrónica</option>
+              <option value="6">Ingeniería Ambiental</option>
+              <option value="7">Ingeniería Biomédica</option>
+              <option value="8">Ingeniería de Telecomunicaciones</option>
+            </select>
+          </div>
 
-        <div class="mb-3">
-          <select class="form-select custom-input" required>
-            <option value="" selected disabled>Elige el campus</option>
-            <option value="1">Lima Norte</option>
-            <option value="2">Lima Sur</option>
-            <option value="3">Lima Este</option>
-            <option value="4">Lima Oeste</option>
-            <option value="5">Lima Arequipa</option>
-            <option value="6">Lima Trujillo</option>
-          </select>
-        </div>
+          <div class="mb-3">
+            <select class="form-select custom-input" required>
+              <option value="" selected disabled>Elige el campus</option>
+              <option value="1">Lima Norte</option>
+              <option value="2">Lima Sur</option>
+              <option value="3">Lima Este</option>
+              <option value="4">Lima Oeste</option>
+              <option value="5">Lima Arequipa</option>
+              <option value="6">Lima Trujillo</option>
+            </select>
+          </div>
 
-        <div class="mb-3">
-          <input
-            type="text"
-            class="form-control custom-input"
-            placeholder="Apellidos y Nombres"
-            required
-          />
-        </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control custom-input"
+              placeholder="Apellidos y Nombres"
+              required
+            />
+          </div>
 
-        <div class="mb-3">
-          <input
-            type="email"
-            class="form-control custom-input"
-            placeholder="Correo electrónico"
-            required
-          />
-        </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control custom-input"
+              placeholder="Correo electrónico"
+              required
+            />
+          </div>
 
-        <div class="mb-4">
-          <input
-            type="tel"
-            class="form-control custom-input"
-            placeholder="Celular"
-            required
-          />
-        </div>
+          <div class="mb-4">
+            <input
+              type="tel"
+              class="form-control custom-input"
+              placeholder="Celular"
+              required
+            />
+          </div>
 
-        <p class="etiqueta-radio mb-2">¿Cómo nos comunicamos contigo?</p>
-        <div class="row mb-4 comunicacion">
-          <div class="col-6">
-            <div class="form-check custom-radio">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="comunicacion"
-                id="radioWhatsApp"
-                required
-              />
-              <label class="form-check-label" for="radioWhatsApp">
-                WhatsApp
-              </label>
+          <p class="etiqueta-radio mb-2">¿Cómo nos comunicamos contigo?</p>
+          <div class="row mb-4 comunicacion">
+            <div class="col-6">
+              <div class="form-check custom-radio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="comunicacion"
+                  id="radioWhatsApp"
+                  required
+                />
+                <label class="form-check-label" for="radioWhatsApp">
+                  WhatsApp
+                </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-check custom-radio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="comunicacion"
+                  id="radioLlamada"
+                />
+                <label class="form-check-label" for="radioLlamada">
+                  Llamada
+                </label>
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="form-check custom-radio">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="comunicacion"
-                id="radioLlamada"
-              />
-              <label class="form-check-label" for="radioLlamada">
-                LLamada
-              </label>
-            </div>
+
+          <div class="form-check mb-4 custom-checkbox">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="checkTerminos"
+              required
+            />
+            <label class="form-check-label" for="checkTerminos">
+              Acepto las
+              <a href="#" class="enlace-rojo">políticas de privacidad</a> y los
+              <a href="#" class="enlace-rojo">términos y condiciones.</a>
+            </label>
           </div>
-        </div>
 
-        <div class="form-check mb-4 custom-checkbox">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="checkTerminos"
-            required
-          />
-          <label class="form-check-label" for="checkTerminos">
-            Acepto las
-            <a href="#" class="enlace-rojo">políticas de privacidad</a> y los
-            <a href="#" class="enlace-rojo">términos y condiciones.</a>
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-enviar w-100">Enviar</button>
-      </form>
-    </div>
+          <button type="submit" class="btn btn-enviar w-100">Enviar</button>
+        </form>
+      </div>
+    </main>
     <!-- FIN DEL REGISTRO -->
+
+    <!-- INICIO DEL FOOTER -->
+    <footer class="bg-black text-white pt-5 mt-auto">
+      <div class="container footer">
+        <div class="row">
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-4"
+          >
+            <i class="fa-solid fa-mobile-screen iconFooter"></i>
+            <div>
+              <h5 class="fw-bold mb-0">Contacto</h5>
+              <div class="small text-secondary">+51 939 123 987</div>
+              <div class="small text-secondary">+51 939 123 987 (Whatsapp)</div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center mb-4"
+          >
+            <i class="fa-solid fa-envelope iconFooter"></i>
+            <div>
+              <h5 class="fw-bold mb-0">E-Mail</h5>
+              <div class="small text-secondary">devlab.pe@gmail.com</div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mb-4 iconFooter"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h5 class="fw-bold mb-0">Dirección</h5>
+              <div class="small text-secondary">Lima - Perú</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 px-4" style="font-size: 0.75rem">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p class="mb-0 text-secondary text-uppercase">
+            Devlab Soluciones Informáticas SAC @2022 - Todos los derechos
+            reservados
+          </p>
+          <p class="mb-0 text-secondary">
+            Desarrollado por
+            <span class="text-danger fw-bold">MIGUEL SEVILLANO</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
 
     <!-- IMPORTAR JS ANTES DEL CIERRE DEL BODY -->
     <script src="js/headroom.min.js"></script>
